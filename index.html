@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="keywords" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+	<link rel="shortcut icon" href="image/icon.png" type="image/png">
+	<link rel="image_src" href="./image/icon.png">
+	<meta property="og:image" content="http://htc.zzz.com.ua/image/logo.png">
+
+	<meta name="twitter:card" content="Мы - компания, которая поможет Вашему бизнесу развиваться в комплексе. Предоставляем полный комплект IT-услу и дизайна, продвигаем Ваш бизнес в интернете, оказываем рекрутинговые усглуги. Производим обучение  сфере IT  и занимаемся инвестициями.">
+	<meta name="description" content="Мы - компания, которая поможет Вашему бизнесу развиваться в комплексе. Предоставляем полный комплект IT-услу и дизайна, продвигаем Ваш бизнес в интернете, оказываем рекрутинговые усглуги. Производим обучение  сфере IT  и занимаемся инвестициями.">
+	<meta name="twitter:card" content="Мы - компания, которая поможет Вашему бизнесу развиваться в комплексе. Предоставляем полный комплект IT-услу и дизайна, продвигаем Ваш бизнес в интернете, оказываем рекрутинговые усглуги. Производим обучение  сфере IT  и занимаемся инвестициями.">
+	<meta property="og:description" content="Мы - компания, которая поможет Вашему бизнесу развиваться в комплексе. Предоставляем полный комплект IT-услу и дизайна, продвигаем Ваш бизнес в интернете, оказываем рекрутинговые усглуги. Производим обучение  сфере IT  и занимаемся инвестициями.">
+	<meta property="og:site_name" content="Hotey Technology Company">
+	<meta property="og:title" content="Hotey Technology Company">
+
+	<title>Hotey Technology Company</title>
+	<link href="css/main.css" rel="stylesheet">
+	<link href="fonts/baronneue/baronneue.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="site-background">
+		</div>
+		<div class="header">
+			<a href="index.html">
+                <img class="header__logo" src="./image/logo.png" alt="logo Hotey" title="Hotey">
+            </a>
+			<div class="header-menu">
+				<span class="header-menu__point">
+                <a href="index.html">главная</a>
+            </span>
+				<span class="header-menu__point">
+                <a href="#2">новости</a>
+            </span>
+				<span class="header-menu__point">
+                 <a href="order.html">заявка</a>
+            </span>
+				<span class="header-menu__point">
+                 <a href="vacancies.html">вакансии</a>
+            </span>
+				<span class="header-menu__point">
+                 <a href="comments.html">отзывы</a>
+            </span>
+				<span class="header-menu__point">
+                 <a href="#2">контакты</a>
+            </span>
+			</div>
+
+
+			<div class="header-control">
+				<div class="header-control__cabinet main-nav">
+					<span class="account cd-signin">
+                    вход
+                </span>
+					<span class="registration cd-signup">
+                    регистрация
+                </span>
+				</div>
+				<div class="language">
+					<label><input type="radio" name="ru"  value="rus" checked />
+                <span class="language__point language_ru">
+                рус
+            </span></label>
+					<label><input type="radio" name="en"  value="en" />
+          <span class="language__point language_en">
+                eng
+            </span></label>
+				</div>
+			</div>
+		</div>
+
+		<!-- все формы на фоне затемнения-->
+		<div class="cd-user-modal">
+			<div class="cd-user-modal-container">
+				<!-- основной контейнер -->
+				<ul class="cd-switcher">
+					<li><a href="#0">вход</a></li>
+					<li><a href="#0">регистрация</a></li>
+				</ul>
+
+				<div id="cd-login">
+					<!-- форма входа -->
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signin-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">E-mail</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signin-password">Пароль</label>
+							<input class="full-width has-padding has-border" id="signin-password" type="text" placeholder="Пароль">
+							<a href="#0" class="hide-password" onclick="Javascript: return false;">скрыть</a>
+							<span class="cd-error-message">Пароль</span>
+						</p>
+
+						<p class="fieldset">
+							<input type="checkbox" id="remember-me" checked>
+							<label for="remember-me">Запомнить меня</label>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width" type="submit" value="Войти">
+						</p>
+					</form>
+
+					<p class="cd-form-bottom-message"><a href="#0">Забыли свой пароль?</a></p>
+					<!-- <a href="#0" class="cd-close-form">Close</a> -->
+				</div>
+				<!-- cd-login -->
+
+				<div id="cd-signup">
+					<!-- форма регистрации -->
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-username" for="signup-username">Имя пользователя</label>
+							<input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Имя пользователя">
+							<span class="cd-error-message">Имя пользователя</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="signup-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">E-mail</span>
+						</p>
+
+						<p class="fieldset">
+							<label class="image-replace cd-password" for="signup-password">Пароль</label>
+							<input class="full-width has-padding has-border" id="signup-password" type="text" placeholder="Пароль">
+							<a href="#0" class="hide-password">скрыть</a>
+							<span class="cd-error-message">Пароль</span>
+						</p>
+						<p class="header-dropdown">Выберите вид услуги</p>
+						<div class="dropdown-container">
+							<span class="dropdown-image"></span>
+							<select id="cabinet-type" name="cabinet-type" class="dropdown-select has-border has-padding">   
+                          <option value="it">
+                          Ит-услуги
+                         </option>  
+                           <option value="concert">
+                        Организация клубного шоу
+                         </option>     
+                           <option value="school">
+                          Школа
+                         </option>     
+                           <option value="investment">
+                          Инвестиции
+                         </option>     
+                           <option value="recruiting">
+                         Рекрутинговые услуги
+                         </option>     
+                           <option value="charity">
+                          Благотворительность
+                         </option>          
+                        </select>
+						</div>
+						<p class="fieldset">
+							<input type="checkbox" id="accept-terms">
+							<label for="accept-terms">Я согласен с <a href="#0">Условиями</a></label>
+						</p>
+						<p class="fieldset">
+							<input class="full-width has-padding" type="submit" value="Создать аккаунт">
+						</p>
+					</form>
+
+					<!-- <a href="#0" class="cd-close-form">Close</a> -->
+				</div>
+				<!-- cd-signup -->
+
+				<div id="cd-reset-password">
+					<!-- форма восстановления пароля -->
+					<p class="cd-form-message">Забыли пароль? Пожалуйста, введите адрес своей электронной почты. Вы получите ссылку, чтобы создать новый пароль.</p>
+
+					<form class="cd-form">
+						<p class="fieldset">
+							<label class="image-replace cd-email" for="reset-email">E-mail</label>
+							<input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+							<span class="cd-error-message">E-mail</span>
+						</p>
+
+						<p class="fieldset">
+							<input class="full-width has-padding" type="submit" value="Восстановить пароль">
+						</p>
+					</form>
+
+					<p class="cd-form-bottom-message"><a href="#0">Вернуться к входу</a></p>
+				</div>
+				<!-- cd-reset-password -->
+				<a href="#0" class="cd-close-form" onclick="Javascript: return false;">Закрыть</a>
+			</div>
+			<!-- cd-user-modal-container -->
+		</div>
+		<div class="fixed-footer">
+			<a href="#5">
+				<div class="mail">
+					<span class="mail__img">
+           </span>
+					<span class="span mail__text">hotey-tech.mail.ru</span>
+				</div>
+			</a>
+			<a href="#2">
+				<div class="arrow">
+					<span class="arrow__name">наши направления</span>
+					<span class="arrow__img"></span>
+				</div>
+			</a>
+			<div class="social">
+				<a class="social__adress vk" href="https://vk.com/hoteycompany_razrabotka_saita"></a>
+				<a class="social__adress fb" href="#2"></a>
+				<a class="social__adress tw" href="#3"></a>
+				<a class="social__adress in" href="#4"></a>
+			</div>
+		</div>
+		<div class="section section-1">
+			<span id="one" class="section-1_start-video"></span>
+		</div>
+		<div id="modal-container">
+			<span class="start-modal"></span>
+			<div class="modal">
+				<div class="modal-video">
+					<div id="video-placeholder"></div>
+					<span class="close-modal">
+                            X
+                        </span>
+				</div>
+			</div>
+		</div>
+		<div class="section section-2">
+			<span class="section-header">
+                наши направления
+            </span>
+			<div class="section-2__container">
+				<a href="#it" class="direction direction-1">
+                    <img class="direction__img" src="./image/it.jpg" alt="" title="">
+                </a>
+				<a href="#club" class="direction direction-2">
+                    <img class="direction__img" src="./image/club.jpg" alt="" title="">
+                </a>
+				<a href="#charity" class="direction direction-3">
+                    <img class="direction__img" src="./image/charity.jpg" alt="" title="">
+                </a>
+				<a href="#investment" class="direction direction-4">
+                    <img class="direction__img" src="./image/investment.jpg" alt="" title="">
+                </a>
+				<a href="#recruiting" class="direction direction-5">
+                    <img class="direction__img" src="./image/recruiting.jpg" alt="" title="">
+                </a>
+				<a href="#school" class="direction direction-6">
+                    <img class="direction__img" src="./image/school.jpg" alt="" title="">
+                </a>
+			</div>
+		</div>
+		<div class="section section-3">
+			<span class="section-header">
+                наши представительства
+            </span>
+			<div class="section-3_container">
+				<div class="location location-rus">
+					<span class="location_header">rus</span>
+					<span class="location_discription">москва</span>
+					<div class="location_map location_map-left map-rus">
+						<div class="map" id="map-rus"></div>
+						<span>главный офис, 125167, г. москва, 
+ул. константина симонова дом,
+ 5 корп 2 оф-41 </span>
+					</div>
+				</div>
+				<div class="location location-blr">
+					<span class="location_header">blr</span>
+					<span class="location_discription">минск</span>
+					<div class="location_map location_map-left map-blr">
+						<div class="map" id="map-blr"></div>
+						<span>г. минск, 
+ул. казинца 11-а, гермес-центр </span>
+					</div>
+				</div>
+				<div class="location location-cze">
+					<span class="location_header">cze</span>
+					<span class="location_discription">прага</span>
+					<div class="location_map location_map-left map-cze">
+						<div class="map" id="map-cze"></div>
+						<span>г. прага, 
+ул. колбенова прага-9</span>
+					</div>
+				</div>
+				<div class="location location-lva">
+					<span class="location_header">lva</span>
+					<span class="location_discription">Рига</span>
+					<div class="location_map location_map-right map-lva">
+						<div class="map" id="map-lva"></div>
+						<span>г. рига, 
+ул. гертрудес
+дом 11 </span>
+					</div>
+				</div>
+				<div class="location location-ltu">
+					<span class="location_header">ltu</span>
+					<span class="location_discription">вильнюс</span>
+					<div class="location_map location_map-right map-ltu">
+						<div class="map" id="map-ltu"></div>
+						<span>г. вильнюс, 
+snipisk se. konstitucijos pr. </span>
+					</div>
+				</div>
+				<div class="location location-ua">
+					<span class="location_header">ua</span>
+					<span class="location_discription">киев</span>
+					<div class="location_map location_map-right map-ua">
+						<div class="map" id="map-ua"></div>
+						<span>4104071, г. киев, 
+ул.верхний вал 64 </span>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<div class="preload_container">
+		<div class="preload">
+			<div class="preload_logo"></div>
+			<span class="preload_text">hotey<br>
+technology<br>
+company<br></span>
+		</div>
+	</div>
+
+	<!-- jquery-->
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU">
+
+
+	</script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/89/three.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js'></script>
+	<script src='https://threejs.org/examples/js/lights/RectAreaLightUniformsLib.js'></script>
+
+	<script src='js/index.js'></script>
+	<!--
+<script src='js/modernizr-detectizr.min.js'></script>
+<script src="js/animations-libs-min.js"></script>
+<script src="js/app-min.js"></script>
+<script src="js/anims-min.js"></script>
+-->
+</body>
+
+</html>

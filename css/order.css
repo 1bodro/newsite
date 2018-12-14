@@ -1,0 +1,371 @@
+.main-order {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    padding: 5em 0;
+    background: #E9E8CF;
+}
+
+.header-style {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.75em;
+    margin-bottom: 1em;
+}
+
+.header-style::after {
+    content: '';
+    display: block;
+    width: 6em;
+    border-bottom: .1em solid #640457;
+    margin: 0 auto;
+    padding-top: .5em;
+}
+
+.orders_container {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.order_container {
+    display: block;
+    margin: 2em;
+    text-align: center;
+}
+
+.order_header {
+    font-size: 1.4em;
+    margin-bottom: 1.5em;
+}
+
+.order {
+    display: flex;
+    height: 22em;
+    width: 22em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.order::after {
+    content: '';
+    width: 100%;
+    height: 0%;
+    background: rgba(232, 211, 226, 0.8);
+    z-index: 2;
+    text-align: center;
+    display: block;
+    font-size: 1.4em;
+    -webkit-transition: all 600ms;
+    -o-transition: all 600ms;
+    transition: all 600ms;
+    -webkit-animation: order_out 500ms ease-in-out forwards;
+    animation: order_out 500ms ease-in-out forwards;
+}
+
+.order:hover::after {
+    -webkit-animation: order_in 500ms ease-in-out forwards;
+    animation: order_in 500ms ease-in-out forwards;
+}
+
+@-webkit-keyframes order_in {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+
+@-webkit-keyframes order_out {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+        padding: 0;
+    }
+}
+
+.order_header {
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 10% 0;
+    background: rgba(256, 256, 256, .5);
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 900ms;
+    -o-transition: all 900ms;
+    transition: all 900ms;
+    z-index: 10;
+}
+
+.order:hover .order_header {
+    top: 150%;
+
+}
+
+.order_touch {
+    display: none;
+}
+
+.order_points {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 15;
+    top: 50%;
+    left: -200%;
+    height: 100%;
+    width: 100%;
+    padding: .5em 1em;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 600ms;
+    -o-transition: all 600ms;
+    transition: all 600ms;
+}
+
+.order:hover .order_points {
+    left: 50%;
+
+}
+
+.order_blank {
+    position: relative;
+    margin-bottom: .5em;
+}
+
+.order_blank:hover {
+    color: #640457;
+}
+
+.order_blank::after {
+    content: "";
+    background-color: #640457;
+    display: block;
+    height: 1px;
+    width: 0%;
+    left: 50%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    -o-transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.order_blank:hover:after {
+    width: 13em;
+}
+
+.order_img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: auto;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*    z-index: -1;*/
+    -webkit-transition: all 600ms;
+    -o-transition: all 600ms;
+    transition: all 600ms;
+}
+
+.order:hover .order_img {
+    width: 110%;
+}
+
+/*Медиа запросы @media*/
+
+@media (-moz-touch-enabled: 1),
+(pointer:coarse) {
+    .order_touch {
+        display: flex;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        position: absolute;
+        top: 85%;
+        left: 50%;
+        padding: 10% 0;
+        width: 100%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: all 900ms;
+        -o-transition: all 900ms;
+        transition: all 900ms;
+        z-index: 10;
+    }
+
+    .touch_logo {
+        position: absolute;
+        width: 3em;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+
+    .touch_hand {
+        position: absolute;
+        width: 2em;
+        height: auto;
+        top: 50%;
+        left: 47%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-animation: pulse-2 1.8s ease infinite;
+        animation: pulse-2 1.8s ease infinite;
+    }
+
+    .order:hover .order_touch {
+        top: 150%;
+    }
+
+    .touch_logo_container {
+        width: 3em;
+        height: 3em;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    .touch_logo_container::before {
+        content: '';
+        position: absolute;
+        border: 2px solid rgba(111, 26, 109, .5);
+        left: -2em;
+        right: -2em;
+        top: -2em;
+        bottom: -2em;
+        border-radius: 50%;
+        -webkit-animation: pulse 1.8s ease-in-out infinite;
+        animation: pulse 1.8s ease-in-out infinite;
+        opacity: 0;
+    }
+    .touch_logo_container::after {
+        content: '';
+        position: absolute;
+        z-index: -3;
+        border: 1px solid rgba(111, 26, 109, .5);
+        left: -2em;
+        right: -2em;
+        top: -2em;
+        bottom: -2em;
+        border-radius: 50%;
+        -webkit-animation: pulse 1.8s ease-in-out infinite;
+        animation: pulse 1.8s ease-in-out infinite;
+        -webkit-animation-delay: .5s;
+        animation-delay: .5s;
+        opacity: 0;
+    }
+    @keyframes pulse {
+        0% {
+            -webkit-transform: scale(0.4);
+            transform: scale(0.4);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            -webkit-transform: scale(.6);
+            transform: scale(.6);
+            opacity: 0;
+        }
+    }
+    @keyframes pulse-2 {
+        0% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+        50% {
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+            opacity: .75;
+        }
+        100% {
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+        }
+    }
+
+
+}
+
+@media screen and (max-width:740px) {
+    .order {
+        height: 28em;
+        width: 28em;
+    }
+    .order_blank {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .order {
+        height: 26em;
+        border-radius: 0;
+        width: 22em;
+    }
+}
